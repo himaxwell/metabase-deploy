@@ -1,0 +1,19 @@
+{
+  "mcpServers": {
+    "heroku": {
+      "command": "npx",
+      "args": ["-y", "@heroku/mcp-server"],
+      "env": {
+        "HEROKU_API_KEY": "${HEROKU_API_KEY}",
+        "MCP_SERVER_REQUEST_TIMEOUT": "30000"
+      }
+    },
+    "gitbook-mcp": {
+      "command": "npx",
+      "args": ["gitbook-mcp", "--organization-id=-MOX8I55Co9kmR1V7HdN"],
+      "env": {
+        "GITBOOK_API_TOKEN": "${GITBOOK_API_TOKEN}"
+      }
+    }
+  }
+}
